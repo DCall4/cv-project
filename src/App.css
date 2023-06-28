@@ -1,3 +1,184 @@
+#App {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr 7fr;
+  font-family: "Playfair Display", "Didot", Times, serif;
+}
+
+#Contact {
+  grid-column: 1 / span 2;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  justify-items: start;
+  align-items: center;
+  padding-top: 1vh;
+  background-color: steelblue;
+  color: white;
+}
+
+.heading {
+  font-size: 1.8vh;
+  font-weight: 800;
+  border-bottom: solid 0.25vw steelblue;
+  margin-bottom: 0.7vh;
+}
+
+#Education {
+  grid-row: 2 / span 2;
+}
+
+.edu-school {
+  font-weight: 600;
+}
+
+.edu-degree {
+  font-style: italic;
+}
+
+.edu-date,
+.exp-date,
+.location {
+  margin-left: 0.6vw;
+}
+
+.eduDiv {
+  display: flex;
+}
+
+#Experience {
+  grid-column: 2 / span 1;
+}
+
+#Skills {
+  grid-row: 4 / span 2;
+}
+
+.expTitleDiv,
+.companyDiv {
+  display: flex;
+}
+
+.expTitleDiv {
+  font-weight: 800;
+}
+
+.companyDiv {
+  font-style: italic;
+}
+
+.description {
+  grid-column: 1 / span 2;
+  padding-left: 2vw;
+}
+
+.descList {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  font-size: 1.2vh;
+}
+
+.skillList {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+.editBtn {
+  opacity: 1;
+}
+
+ul {
+  padding-inline-start: 2vw;
+}
+
+.listDiv {
+  display: flex;
+}
+
+.skillDiv {
+  margin-top: 0.5vh;
+}
+
+.rightPanel {
+  border-left: solid .25vw steelblue;
+  padding: 2vw 2vw 0;
+}
+
+.leftPanel {
+  padding: 2vw 2vw 0;
+}
+
+.contactBtn {
+  grid-area: 4 / 3;
+}
+
+.printable {
+  opacity: 0;
+}
+
+button {
+  opacity: 0.5;
+  border: none;
+}
+
+button:hover {
+  opacity: 1
+}
+
+.name {
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 2;
+  font-size: 4.5vh;
+  font-weight: 700;
+  align-self: end;
+}
+
+.website {
+  grid-area: 1 / 3;
+  align-self: end;
+}
+
+.phone {
+  grid-area: 3 / 3;
+  align-self: start;
+}
+
+.email {
+  grid-area: 2 / 3;
+}
+
+.leftSide {
+  justify-self: start;
+  padding-right: 2vw;
+  position: relative;
+  top: 0.6vh;
+}
+
+.rightSide {
+  padding-left: 2vw;
+}
+
+.title {
+  grid-row: 3;
+  grid-column: 1 / span 2;
+  align-self: start;
+  padding-left: 3vw;
+}
+
+.editForm {
+  position: absolute;
+  bottom: 1vh;
+  right: 1vw;
+  display: grid;
+  gap: .5vh;
+  grid-template-columns: 1fr;
+  background-color: steelblue;
+  padding: 2vw;
+  color: white;
+}
+
 .App {
   text-align: center;
 }
